@@ -11,3 +11,9 @@ describe 'fizzbuzz' do
     expect(fizzbuzz(2)).to eq 2
   end
 end
+
+describe 'fizzbuzz' do
+  it 'returns "Fizz" when passed 3' do
+    expect(fizzbuzz(3)).to eq "Fizz"
+  end
+end
