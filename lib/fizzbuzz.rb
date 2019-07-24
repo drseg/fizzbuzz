@@ -1,6 +1,12 @@
 def fizzbuzz(n)
-  return "FizzBuzz" if n % 15 == 0
-  return "Fizz" if n % 3 == 0
-  return "Buzz" if n % 5 == 0
+  return "FizzBuzz" if n.multiple_of? 15
+  return "Fizz" if n.multiple_of? 3
+  return "Buzz" if n.multiple_of? 5
   return n
+end
+
+class Integer
+  def multiple_of?(n)
+    self % n == 0
+  end
 end
