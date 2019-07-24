@@ -1,3 +1,3 @@
 def fizzbuzz(n)
-  return 1
+  return n
 end
