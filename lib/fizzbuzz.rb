@@ -2,7 +2,7 @@ def fizzbuzz(n)
   return "FizzBuzz" if n.multiple_of? 15
   return "Fizz" if n.multiple_of? 3
   return "Buzz" if n.multiple_of? 5
-  return n
+  return n.to_s
 end
 
 class Integer
