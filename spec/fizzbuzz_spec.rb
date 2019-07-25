@@ -2,40 +2,37 @@
 
 require 'fizzbuzz'
 
-describe 'fizzbuzz' do
-  def fizzbuzz(num)
-    num.fizzbuzz
+describe 'fizzbuzz', :aggregate_failures do
+  def it_converts(*nums, to: to)
+    nums.each do |n|
+      expect(n.fizzbuzz).to eq to
+    end
   end
 
-  it 'returns 1 when passed 1' do
-    expect(fizzbuzz(1)).to eq '1'
+  context 'multiples of 3' do
+    it 'converts to Fizz' do
+      it_converts 3, 6, 9, 12, to: 'Fizz'
+    end
   end
 
-  it 'returns 2 when passed 2' do
-    expect(fizzbuzz(2)).to eq '2'
+  context 'multiples of 5' do
+    it 'converts to Buzz' do
+      it_converts 5, 10, 20, 25, to: 'Buzz'
+    end
   end
 
-  it 'returns "Fizz" when passed 3' do
-    expect(fizzbuzz(3)).to eq 'Fizz'
+  context 'multiples of 3 and 5' do
+    it 'converts to FizzBuzz' do
+      it_converts 15, 30, 45, 60, to: "FizzBuzz"
+    end
   end
 
-  it 'returns 4 when passed 4' do
-    expect(fizzbuzz(4)).to eq '4'
-  end
-
-  it 'returns "Buzz" when passed 5' do
-    expect(fizzbuzz(5)).to eq 'Buzz'
-  end
-
-  it 'returns "Fizz" when passed 6' do
-    expect(fizzbuzz(6)).to eq 'Fizz'
-  end
-
-  it 'returns "Buzz" when passed 10' do
-    expect(fizzbuzz(10)).to eq 'Buzz'
-  end
-
-  it 'returns "FizzBuzz" when passed 15' do
-    expect(fizzbuzz(15)).to eq 'FizzBuzz'
+  context 'all other numbers' do
+    it 'returns itself as string' do
+      it_converts 1, to: '1'
+      it_converts 2, to: '2'
+      it_converts 4, to: '4'
+      it_converts 7, to: '7'
+    end
   end
 end
