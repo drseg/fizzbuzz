@@ -1,5 +1,5 @@
 ### Status
-[![Build Status](https://travis-ci.com/drseg/fizzbuzz.svg?branch=master)](https://travis-ci.com/drseg/fizzbuzz)
+[![Build Status](https://www.travis-ci.org/drseg/fizzbuzz.svg?branch=master)](https://www.travis-ci.org/drseg/fizzbuzz)
 
 # Fizzbuzz #
 
