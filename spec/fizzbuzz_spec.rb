@@ -23,7 +23,7 @@ describe 'fizzbuzz', :aggregate_failures do
 
   context 'multiples of 3 and 5' do
     it 'converts to FizzBuzz' do
-      it_converts 15, 30, 45, 60, to: "FizzBuzz"
+      it_converts 15, 30, 45, 60, to: 'FizzBuzz'
     end
   end
 
