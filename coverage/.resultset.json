@@ -1,0 +1,58 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/danielsegall/Makers/Precourse/fizzbuzz/spec/fizzbuzz_spec.rb": [
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        7,
+        7,
+        16,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/danielsegall/Makers/Precourse/fizzbuzz/lib/fizzbuzz.rb": [
+        null,
+        null,
+        1,
+        1,
+        16,
+        12,
+        8,
+        null,
+        4,
+        null,
+        null,
+        1,
+        36,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1564152665
+  }
+}
