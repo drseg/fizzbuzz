@@ -3,7 +3,7 @@
 require 'fizzbuzz'
 
 describe 'fizzbuzz', :aggregate_failures do
-  def self.it_converts(*nums, to: to)
+  def self.it_converts(*nums, to:)
     it "converts #{nums} to #{to}" do
       nums.each do |n|
         expect(n.fizzbuzz).to eq to
