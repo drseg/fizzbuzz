@@ -11,11 +11,11 @@ describe 'fizzbuzz', :aggregate_failures do
     end
   end
 
-  context 'multiples of 3' do
+  context 'multiples of 3 and not 5' do
     it_converts 3, 6, 9, 12, to: 'Fizz'
   end
 
-  context 'multiples of 5' do
+  context 'multiples of 5 and not 3' do
     it_converts 5, 10, 20, 25, to: 'Buzz'
   end
 
